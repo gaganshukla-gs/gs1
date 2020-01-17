@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Voting poll</title>
+<script type="text/javascript">
+var voteA = 0;
+var voteB = 0;
+function votecandidateA(){
+voteA = voteA + 1;
+document.getElementById('voteA').innerHTML = voteA;
+}
+
+function votecandidateB(){
+voteB = voteB + 1;
+document.getElementById('voteB').innerHTML = voteB;
+}
+</script>
+<style>
+.button {
+  background-color: yellow;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<div style="background-color:orange">
+<h1 align="center">Voting poll</h1>
+</div>
+<table align="center"> 	
+<tr>
+<td id="voteA" align="center"> <h1> 0 </h1></td>
+<td id="voteB" align="center"> <h1> 0 </h1></td>
+</tr>
+<tr>
+<td><img src="bjp.png" width="500" height="500"></td>
+<td><img src="cong.png" width="500" height="500"></td>
+</tr>
+<tr>
+<td align="center"><button class="button" id="b1" onclick="votecandidateA();">Vote</button></td>
+<td align="center"><button class="button" id="b2" onclick="votecandidateB();">Vote</button></td>
+</table>
+
+
+</body>
+</html>
+
